@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  position: absolute;
+}
+
+#controlmain {
+  width: 30%;
+  position: absolute;
+  margin-left: 70vw;
+}
+
+#controlopen,
+#controlclose {
+  background-color: black;
+  color: white;
+  padding: 2.5px;
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#controlclose {
+  display: none;
+}
+
+#control {
+  background-color: rgb(44, 42, 42);
+  display: none;
+}
+
+.scale {
+  background-color: black;
+  color: blue;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+}
+
+.scale span {
+  width: 25%;
+  padding: 5px;
+  font-size: 1.2rem;
+  background-color: black;
+  text-align: left;
+}
+
+.scale .paraval {
+  color: white;
+  font-weight: bolder;
+  /* text-align: center; */
+}
+
+.scale input[type="range"] {
+  -webkit-appearance: none;
+  width: 70%;
+  height: 25px;
+  background: #6a6666;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  padding: 2px;
+}
+
+.scale input[type="checkbox"] {
+  margin-left: 40%;
+}
+
+.scale input[type="color"] {
+  margin-left: 40%;
+}
+
+.paravalbool {
+  width: 30%;
+  color: white;
+}
+
+.scale input[type="range"]:hover {
+  opacity: 1;
+}
+
+.scale input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 3px;
+  height: 27px;
+  background: blue;
+  cursor: col-resize;
+}
+
+select {
+  margin-left: 40%;
+}
