@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/Mouse_events/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    
+    <script type="module" crossorigin src="/Mouse_events/assets/index.189c5568.js"></script>
+    <link rel="stylesheet" href="/Mouse_events/assets/index.5a29705b.css">
+  </head>
+  <body>
+    <div id="controlmain">
+      <div id="controlopen">OpenControls</div>
+      <div id="control">
+        <div class="scale">
+          <span class="paravalbool">draw</span>
+          <input type="checkbox" id="draw" />
+        </div>
+        <div class="scale">
+          <span class="paravalbool">chooseGeometry</span>
+          <select id="geoList">
+            <option value="" selected>Select..</option>
+            <option value="TorusGeometry">Torus</option>
+            <option value="CylinderGeometry">Cylinder</option>
+            <option value="SphereGeometry">Sphere</option>
+            <option value="RingGeometry">Ring</option>
+            <option value="TorusKnotGeometry">TorusKnot</option>
+          </select>
+        </div>
+
+        <div class="scale">
+          <span class="paraval">x</span>
+          <input
+            class="scale"
+            type="range"
+            name=""
+            id="rangex"
+            min="1"
+            max="10"
+            step="0.1"
+            value="1"
+          />
+          <span id="slider1val" class="sliderval"></span>
+        </div>
+        <div class="scale">
+          <span class="paraval">y</span>
+          <input
+            type="range"
+            name=""
+            id="rangey"
+            min="1"
+            max="10"
+            step="0.1"
+            value="1"
+          />
+          <span id="slider2val" class="sliderval"></span>
+        </div>
+        <div class="scale">
+          <span class="paraval">z</span>
+          <input
+            type="range"
+            name=""
+            id="rangez"
+            min="1"
+            max="10"
+            step="0.1"
+            value="1"
+          />
+          <span id="slider3val" class="sliderval"></span>
+        </div>
+        <div class="scale">
+          <span class="paravalbool">wireframe</span>
+          <input type="checkbox" id="checkwireframe" />
+        </div>
+        <div class="scale">
+          <span class="paravalbool">ColorGeometry</span>
+          <input type="color" id="rangecolor" />
+        </div>
+      </div>
+      <div id="controlclose">CloseControls</div>
+    </div>
+    
+    
+  </body>
+</html>
